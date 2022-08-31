@@ -22,6 +22,12 @@ function appendToTable(key, oldRates, newRates, idToBeAppended = 'forexTable') {
     if (isEvenNumber(newRate)) {
         newRateCell.style.borderColor = 'red';
     }
+    
+    if (key === 'HKD') {
+        title.style.borderColor = 'red';
+        oldRateCell.style.borderColor = 'red';
+        newRateCell.style.borderColor = 'red';
+    }
 
     newRow.appendChild(title);
     newRow.appendChild(oldRateCell);
